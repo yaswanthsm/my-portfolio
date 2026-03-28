@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YASWANTH S M | Portfolio</title>
+    <meta name="description" content="Portfolio of Yaswanth S M - Aspiring AI & ML Engineer and Python Developer.">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor Elements -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-follower"></div>
+    
+    <!-- Canvas for Star Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <a href="#hero" class="logo">YASWANTH<span class="accent">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h2 class="greeting fade-in">Hello, I'm</h2>
+                    <h1 class="name fade-in delay-1">YASWANTH S M</h1>
+                    <h3 class="title fade-in delay-2"><span id="typing-text"></span><span class="cursor">&nbsp;</span></h3>
+                    <p class="bio fade-in delay-3">
+                        "I am an aspiring AI & Machine Learning Engineer with a strong foundation in Python, Java, and web technologies. Currently pursuing B.Tech in AI & ML at Bannari Amman Institute of Technology (2024&ndash;2028), I build real-world projects and continuously improve my problem-solving skills."
+                    </p>
+                    <div class="cta-group fade-in delay-4">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper fade-in delay-2">
+                    <div class="blob-bg"></div>
+                    <img src="assets/images/avatar.jpeg" alt="Yaswanth S M" class="hero-image glass-card">
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title slide-up">About Me <span class="accent">.</span></h2>
+                <div class="about-content slide-up">
+                    <div class="about-text glass-card">
+                        <p>I am an aspiring AI & Machine Learning Engineer with a deep passion for leveraging data and algorithms to solve real-world problems. With a solid grounding in programming languages such as Python and Java, alongside modern web development tech, I constantly seek out complex challenges through coding platforms and hackathons.</p>
+                        <br>
+                        <p>My goal is to innovate and grow into a professional engineer who constructs intelligent, scalable, and impactful solutions.</p>
+                    </div>
+                    <div class="education-card glass-card slide-up delay-1">
+                        <h3><i class="fas fa-graduation-cap accent-text"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h4>B.Tech in Artificial Intelligence & Machine Learning</h4>
+                                <p class="institution">Bannari Amman Institute of Technology</p>
+                                <span class="year">2024 &ndash; 2028</span>
+                            </div>
+                            <div class="timeline-item">
+                                <!-- Place for previous education if needed -->
+                                <h4>Higher Secondary Education</h4>
+                                <p class="institution">School Information</p>
+                                <span class="year">Completed 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title slide-up">My Skills <span class="accent">.</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-card glass-card slide-up">
+                        <div class="skill-info">
+                            <i class="fab fa-python skill-icon"></i>
+                            <h4>Python</h4>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card glass-card slide-up delay-1">
+                        <div class="skill-info">
+                            <i class="fab fa-java skill-icon"></i>
+                            <h4>Java</h4>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card slide-up delay-2">
+                        <div class="skill-info">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card slide-up delay-3">
+                        <div class="skill-info">
+                            <i class="fab fa-css3-alt skill-icon"></i>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card slide-up delay-4">
+                        <div class="skill-info">
+                            <i class="fas fa-file-excel skill-icon"></i>
+                            <h4>Excel</h4>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title slide-up">Featured Projects <span class="accent">.</span></h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card slide-up">
+                        <div class="project-content">
+                            <h3>Wiki Search Application</h3>
+                            <p>A web-based search tool designed to fetch and display Wiki information efficiently using APIs and modern web integration.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>Web</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://capestone-proj-9gb5j3xccusyv3ug7pbj5q.streamlit.app/" target="_blank" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card slide-up delay-1">
+                        <div class="project-content">
+                            <h3>Car Price Prediction System</h3>
+                            <p>A robust machine learning model built using Python data science libraries to predict accurate car prices based on historic trends and features.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Data Science</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://colab.research.google.com/drive/12YyfZ0r_UNdFnqJYBzVaTXooTI0bb278?usp=sharing" target="_blank" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-external-link-alt"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title slide-up">Certifications <span class="accent">.</span></h2>
+                <div class="certifications-grid">
+                    <a href="https://www.hackerrank.com/certificates/iframe/50bfc4ed9287" target="_blank" class="cert-card glass-card slide-up">
+                        <div class="cert-icon"><i class="fas fa-award"></i></div>
+                        <div class="cert-info">
+                            <h3>Problem Solving (Basic)</h3>
+                            <p>HackerRank</p>
+                        </div>
+                        <i class="fas fa-arrow-right cert-arrow"></i>
+                    </a>
+                    
+                    <a href="https://www.hackerrank.com/certificates/232d588ff1db" target="_blank" class="cert-card glass-card slide-up delay-1">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-info">
+                            <h3>Python (Basic)</h3>
+                            <p>HackerRank</p>
+                        </div>
+                        <i class="fas fa-arrow-right cert-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title slide-up">Get In Touch <span class="accent">.</span></h2>
+                <div class="contact-wrapper glass-card slide-up">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm constantly looking for opportunities to grow and collaborate on exciting projects. Feel free to reach out!</p>
+                        
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:smyaswanth2007@gmail.com">smyaswanth2007@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+919345508316">+91 9345508316</a>
+                            </div>
+                        </div>
+
+                        <div class="social-links mt-4">
+                            <a href="https://github.com/yaswanthsm" target="_blank" aria-label="GitHub" class="social-btn"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/yaswanth-s-m-0b7b77329" target="_blank" aria-label="LinkedIn" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://leetcode.com/u/YASWANTHSM007/" target="_blank" aria-label="LeetCode" class="social-btn">
+                                <!-- LeetCode logo fontawesome doesn't exist standard, using code icon -->
+                                <i class="fas fa-code"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_yaswanthhh._?igsh=MTA0aGQ4NG1vZ2RhNg==" target="_blank" aria-label="Instagram" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form action="#" method="POST" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">YASWANTH<span class="accent">.</span></div>
+            <p>&copy; 2026 Yaswanth S M. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/yaswanthsm" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yaswanth-s-m-0b7b77329" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
